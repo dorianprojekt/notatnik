@@ -1,0 +1,24 @@
+<form class="form-signin">
+<h2 class="form-signin-heading">Notatnik by Dorian</h2>
+<div class="google-auth-login">
+  <div class="button-content" (click)="loginGoogle()">Logowanie przez Google</div>
+</div>
+<div class="separator">
+  <hr>
+  <span>lub</span>
+</div>
+<div class="text-input">
+  <label for="inputLogin" class="sr-only">Login</label>
+  <input id="inputLogin" class="form-control" placeholder="Login" required="" autofocus="" name="login" [(ngModel)]="formLogin" (keyup.enter)="zaloguj()">
+</div>
+<div class="text-input">
+  <label for="inputPassword" class="sr-only">Hasło</label>
+  <input type="password" id="inputPassword" class="form-control" placeholder="Hasło" required="" name="pass" [(ngModel)]="formPass" (keyup.enter)="zaloguj()">
+</div>
+<button class="btn btn-lg btn-primary btn-block" type="submit" (click)="zaloguj()">Zaloguj się</button>
+<div class="separator-2">
+  <hr>
+  <span><a routerLink="/register">Zarejestruj się</a>  jeśli nie masz konta</span>
+</div>
+</form>
+

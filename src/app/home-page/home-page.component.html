@@ -1,0 +1,35 @@
+<div class="row header">
+  <div class="col-md-6">
+    <h2>Moje notatki</h2>
+  </div>
+  <div class="col-md-6 text-right">
+    <a routerLink="/notatka/-1" class="btn btn-primary">
+    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+    <span><strong> Dodaj nową notatkę</strong></span></a>
+ </div>
+</div>
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Nazwa</th>
+          <th>Data utworzenia</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let n of notatki">
+          <td>{{n.nazwa}}</td>
+          <td>{{n.data}}</td>
+          <td class="text-right">
+            <a routerLink="/notatka/{{n.id}}" class="btn btn-primary" title="Edytuj">
+              <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+            </a>
+            <a (click)="usun(n.id)" class="btn btn-danger" title="Usuń">
+              <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

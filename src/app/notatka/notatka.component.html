@@ -1,0 +1,20 @@
+<div class="row">
+<form [formGroup]="notatkaAddForm"
+      (ngSubmit)="onSubmitAdd(notatkaAddForm.value)">
+      <div class="form-group">
+          <h2>Dodawanie notatki</h2>
+          <div class="col-sm-12">
+          <label for="nazwa">Nazwa</label>
+          <input type="text" class="form-control" name="nazwa" id="nazwa" formControlName="nazwa">
+          </div>
+          <div class="col-sm-12">
+          <label for="tresc">Treść</label>
+          <textarea class="form-control" name="tresc" id="tresc" formControlName="tresc" rows="15"></textarea>
+          </div>
+          <div class="col-sm-12 col_mar">       
+          <button class="btn btn-primary" type="submit">Zapisz</button>
+          <button class="btn btn-danger" type="button" (click)="anuluj()">Anuluj</button>
+          </div>
+      </div>
+</form>
+</div>

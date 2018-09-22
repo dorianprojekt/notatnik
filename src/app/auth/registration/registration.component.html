@@ -1,0 +1,17 @@
+<form class="form-registration">
+<h2 class="form-registration-heading">Rejestracja <small>(Notatnik by Dorian)</small></h2>
+<div class="text-input">
+  <label for="inputLogin" class="sr-only">Login</label>
+  <input required type="text" id="inputLogin" class="form-control" placeholder="Login" required="" autofocus=""  name="login" [(ngModel)]="formLogin" (keyup.enter)="zarejestruj()">
+</div>
+<div class="text-input">
+  <label for="inputPassword" class="sr-only">Hasło</label>
+  <input required type="password" id="inputPassword" class="form-control" placeholder="Hasło" required="" name="pass" [(ngModel)]="formPass" (keyup.enter)="zarejestruj()">
+</div>
+<button class="btn btn-lg btn-primary btn-block" type="submit" (click)="zarejestruj()">Zarejestruj się</button>
+<div class="separator-2">
+  <hr>
+  <span><a routerLink="/login">Zaloguj się</a>  jeśli masz już konto</span>
+</div>
+</form>
+

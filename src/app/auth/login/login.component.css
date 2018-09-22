@@ -1,0 +1,75 @@
+.form-signin {
+    max-width: 380px;
+    padding: 15px;
+    margin: 40px auto;
+}
+
+.form-signin-heading {
+    color: #204d74;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-signin .text-input {
+    margin-bottom: 12px;
+}
+
+.google-auth-login {
+    line-height: 1.6;
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 3px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 12px;
+    background-color: #DC4E41;
+}
+
+.google-auth-login:hover {
+    background-color: #c63224;
+}
+
+.separator, .separator-2 {
+    display: block;
+    position: relative;
+    padding: 12px 0 6px 0;
+    text-align: center;
+}
+
+.separator > hr {
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    border: none;
+    color: #E6F0F3;
+    background-color: #E6F0F3;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.separator > span {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    padding: 0 36px;
+    top: -6px;
+    background-color: white;
+    font-size: 13px;
+    color: #8A91A6;
+}
+.separator-2 > span {
+    font-size: 13px;
+    color: #8A91A6;
+}

@@ -18,7 +18,7 @@ export class Notatka {//dane naszej firmy
         this.data = this.getFullDateMonthValue(d.getDate()) + '.' + this.getFullDateMonthValue(d.getMonth()+1) + '.' + d.getFullYear() + ' ' + this.getFullDateMonthValue(d.getHours()) + ':' + this.getFullDateMonthValue(d.getMinutes());
     }
 
-    private getFullDateMonthValue(n: number):string{//do generowania nr faktury
+    private getFullDateMonthValue(n: number):string{
         return ((n>9)? '' : '0')+n;
     }
 }
